@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Подписка</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="email">Электронная почта</string>
+    <string name="ok_button">Ок</string>
+    <string name="delete_button">Очистить</string>
+    <string name="hint_user">Введите Ваше имя</string>
+    <string name="hint_email">Введите адрес эл.почты</string>
+    <string name="first_part">Подписка на рассылку успешно оформлена для пользователя </string>
+    <string name="second_part"> на электронный адрес </string>
+</resources>
