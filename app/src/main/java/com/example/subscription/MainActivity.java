@@ -1,13 +1,12 @@
 package com.example.subscription;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,14 +20,16 @@ public class MainActivity extends AppCompatActivity {
         Button cancelButton = findViewById(R.id.cancelButton);
         final EditText name = findViewById(R.id.userNameInsert);
         final EditText email = findViewById(R.id.emailInsert);
-        final String userName = name.getText().toString();
-        final String userEmail = email.getText().toString();
+
 
         okButton.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                output.setText(R.string.first_part + userName + R.string.second_part + userEmail);
+                final String userName = name.getText().toString();
+                final String userEmail = email.getText().toString();
+                String outputText = "Подписка на рассылку успешно оформлена для пользователя "
+                        + userName + " на электронный адрес " + userEmail;
+                output.setText(outputText);
             }
         });
 
